@@ -1,0 +1,267 @@
+* { box-sizing: border-box;}
+header, nav, main, footer, aside { display: block; }
+
+body { background-color: #202020;
+    color: #666666;
+    margin:0;
+	font-family: Verdana, Arial, sans-serif; 
+}
+
+header { background-color: #636631;
+	background-position: bottom;
+	background-repeat: repeat-x;
+	height: 120px;
+	color: #000000;
+	text-align: left;
+	padding: 0 20px;
+	border-bottom: 2px solid #000000; 
+}
+
+aside { float: right;
+ 	width: 6.5px;
+ 	color: #FFFFFF; 
+ 	padding: 30px 35px 5px 20px;
+}
+
+h1 { background-color: #FFFFFF; 
+	color: 	#000000;
+	font-size: 2em;
+	background-position: right;
+	background-repeat: no-repeat;
+	line-height: 140%;  
+	padding-left: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+    vertical-align: middle;
+    height: 100%;
+    font-family: Apple Chancery, cursive;
+   	font-weight: bold;
+}
+
+h2 { color :#3399CC;
+    font-family: Georgia, serif; 
+     background-color: #ffffff; 
+}
+
+h3 { color :#FAEBD7;
+    font-family: Georgia, serif; 
+     background-color: #ffffff; 
+}
+
+.asideh { padding-bottom: 2px;
+ 	border-bottom: 1px solid #000000;
+ 	margin: 10px;
+ 	font-size: 0.90em;
+ }
+
+nav {display: none;}
+
+
+main { margin: 0 210px 0 160px;
+ 	padding: 1px 10px 20px 10px;
+	background-color: #202020;
+ 	color: #FFFFFF;
+	min-width: 960px;
+ 	font-family: Verdana, Arial, sans-serif; 
+}
+
+label { float: left;
+	display: block;
+	width: 8em;
+	padding-right: 1em;
+}
+
+input, textarea{ display: block;
+	margin-bottom: 1em;
+}
+
+#submit { 
+	margin-left: 30%;
+    margin-right:30%;
+    width: 40%;
+}
+
+table { border: 1px solid #3399cc;
+	margin: auto;
+	width: 90%;
+	border-collapse: collapse;
+}
+
+th{color: #C0C0C0;
+	padding: 5px;
+	border: 1px solid #3399cc;
+}
+td{ padding: 5px;
+	border: 1px solid #3399cc;
+}
+
+td { text-align: center;}
+
+.text { text-align: left;}
+
+.home { text-align: center;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.image { display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 30%;}
+
+#middle {text-align: center;}
+
+.hyperlink{	color: #337ab7;}
+
+form { display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+footer { font-size: .70em;
+    font-style: italic;
+   	text-align: center;
+   	padding: 10px;
+	background-color: #FFFFFF;
+	color: #000000;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	h1 { margin: 0; }
+
+	nav { float: none; width: auto; }
+ 	nav li { display: inline-block; 
+ 			padding: 0.5em; 
+ 	}
+ 	nav ul { text-align: center; }
+ 	nav a { border-style: none; }
+
+ 	h1 { margin: 0;
+ 		font-size: 120%;
+ 	}
+ 	
+ 	h2 { font-size: 100%; }
+
+
+	main { margin-left: 0;
+		  font-size: 100%; 
+		  display: inline;
+		}
+
+	.image{ display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 30%;
+	}
+
+	.home{ text-align: center; }
+
+	.navclass{ float: none; width: auto; }
+
+	.navclass li{ display: block; 
+ 			padding: 1em; 
+	}
+
+	.navclass a { display: block;
+	    padding: 0;
+		font-size: 1.2em; 
+	    border-bottom: 2px solid #000000;
+	}
+
+	.navclass ul{ text-align: center;}
+
+	aside { margin-left: 0;
+		  font-size: 100%; 
+		  display: inline;
+	}
+
+	#content{ text-align: right;
+		  font-size: 100%; 
+		  display: inline;
+	}
+
+	form { display: block;
+    	text-align: left; 
+	}
+
+	#submit { margin-left: 30%;
+    	margin-right:30%;
+    	width: 34%;
+	}
+
+	
+ 	footer { margin: 0; }
+}
+
+@media only screen and (max-width: 768px) {
+	h1 { height: 100%;
+	    font-size: 1.6em;
+		padding-left: 0.33em; 
+	}
+
+	h2 { font-size: 1.5em;}
+
+	nav, nav ul, nav li { padding: 0; }
+	nav li { display: block; }
+	
+	nav a { display: block;
+	    padding: 0;
+		font-size: 1.2em; 
+	    border-bottom: 2px solid #000000;
+	}
+
+	main {padding: 0;}
+
+	.image{display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
+	}
+
+	.home{ text-align: center; }
+
+	.navclass{ padding: 8px; 
+	}
+
+	.navclass li{ padding: 0; 
+			display: block; 
+			float: left;
+	}
+
+	.navclass a{ display: block;
+	    padding: 0;
+		font-size: 1.2em; 
+	    border-bottom: 2px solid #000000;
+	}
+
+	aside { margin-left: 0;
+		  font-size: 100%; 
+		  display: block;
+		  float: right;
+	}
+
+	#content{ text-align: left;
+		  font-size: 100%; 
+		  display: inline;
+	}
+
+	form { display: block;
+	    text-align: left;
+	}
+
+	#submit { margin-left: 0%;
+    	margin-right:30%;
+    	width: 34%;
+	}
+
+
+	p { font-size: 90%;	}
+
+ 	footer { padding: 0; }	
+
+}
